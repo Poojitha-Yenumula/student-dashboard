@@ -1,0 +1,17 @@
+{
+  "name": "studysync-student-productivity-hub",
+  "version": "1.0.0",
+  "private": true,
+  "description": "StudySync student productivity app with Gmail API email OTP authentication",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "googleapis": "^189.0.0"
+  }
+}

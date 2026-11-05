@@ -1,0 +1,18 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="StudySync logo">
+  <defs>
+    <linearGradient id="ssGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <linearGradient id="ssLeaf" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#bfdbfe"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="16" fill="url(#ssGrad)"/>
+  <!-- Stylized Sync Book/Arcs Motif -->
+  <path d="M18 43V23c0-2.2 1.8-4 4-4h7c2.2 0 4 1.8 4 4v20c0-1.8-1.5-3.2-3.3-3.2H21.3C19.5 39.8 18 41.2 18 43z" fill="#ffffff" fill-opacity="0.95"/>
+  <path d="M46 43V23c0-2.2-1.8-4-4-4h-7c-2.2 0-4 1.8-4 4v20c0-1.8 1.5-3.2 3.3-3.2h8.4c1.8 0 3.3 1.4 3.3 3.2z" fill="url(#ssLeaf)" fill-opacity="0.88"/>
+  <circle cx="32" cy="15" r="3" fill="#ffffff"/>
+  <path d="M26 46h12" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

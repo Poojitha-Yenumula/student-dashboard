@@ -1,0 +1,18 @@
+{
+  "name": "StudySync — Student Productivity Hub",
+  "short_name": "StudySync",
+  "description": "Plan Better. Study Smarter. Achieve More.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#4f46e5",
+  "icons": [
+    {
+      "src": "./assets/icons/nexum-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

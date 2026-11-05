@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>StudySync — Student Productivity Hub</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/nexum-logo.svg"/>
+  <link rel="shortcut icon" href="assets/icons/nexum-logo.svg"/>
+  <link rel="apple-touch-icon" href="assets/icons/nexum-logo.svg"/>
+  <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#4f46e5"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <!-- Animated background -->
+  <div class="bg">
+    <div class="blob b1"></div>
+    <div class="blob b2"></div>
+    <div class="blob b3"></div>
+    <div class="blob b4"></div>
+  </div>
+
+  <div class="page">
+
+    <!-- LEFT PANEL -->
+    <div class="panel-art">
+      <div class="arc arc1"></div>
+      <div class="arc arc2"></div>
+      <div class="arc arc3"></div>
+
+      <div class="brand">
+        <div class="brand-mark">
+          <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+            <defs>
+              <linearGradient id="idxSsGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#6366f1"/>
+                <stop offset="100%" stop-color="#2563eb"/>
+              </linearGradient>
+            </defs>
+            <rect width="64" height="64" rx="16" fill="url(#idxSsGrad)"/>
+            <path d="M18 43V23c0-2.2 1.8-4 4-4h7c2.2 0 4 1.8 4 4v20c0-1.8-1.5-3.2-3.3-3.2H21.3C19.5 39.8 18 41.2 18 43z" fill="#ffffff" fill-opacity="0.95"/>
+            <path d="M46 43V23c0-2.2-1.8-4-4-4h-7c-2.2 0-4 1.8-4 4v20c0-1.8 1.5-3.2 3.3-3.2h8.4c1.8 0 3.3 1.4 3.3 3.2z" fill="#bfdbfe" fill-opacity="0.9"/>
+            <circle cx="32" cy="15" r="3" fill="#ffffff"/>
+            <path d="M26 46h12" stroke="#93c5fd" stroke-width="2.5" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <span class="brand-name">StudySync</span>
+      </div>
+
+      <div class="art-hero">
+        <div class="pill"><span class="pill-dot"></span> Student Productivity Hub</div>
+        <h1 class="h1">Master every<br>subject with<br><span class="shine">laser focus.</span></h1>
+        <p class="art-p">Plan Better. Study Smarter. Achieve More. Bring your tasks, study sessions, assignments, notes and goals together in one modern workspace.</p>
+        <div class="features">
+          <div class="feat"><span class="feat-icon">📚</span> Study Tracker</div>
+          <div class="feat"><span class="feat-icon">⏱</span> Focus Timer</div>
+          <div class="feat"><span class="feat-icon">✅</span> Task Manager</div>
+          <div class="feat"><span class="feat-icon">📋</span> Assignments</div>
+          <div class="feat"><span class="feat-icon">📝</span> Notes &amp; Search</div>
+          <div class="feat"><span class="feat-icon">📊</span> Analytics</div>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div><span class="sv">12k+</span><span class="sl">Students</span></div>
+        <div><span class="sv">94%</span><span class="sl">Goal rate</span></div>
+        <div><span class="sv">3.8×</span><span class="sl">Productivity</span></div>
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL -->
+    <div class="panel-form">
+      <div class="form-shell">
+
+        <!-- LOGIN -->
+        <div class="card" id="loginForm">
+          <span class="card-icon">✉️</span>
+          <div class="card-title">Sign in with email</div>
+          <div class="card-sub">We’ll email you a one-time code. No password needed.</div>
+          <form id="loginEl" novalidate>
+            <div class="field">
+              <label for="loginEmail">Email address</label>
+              <div class="iw"><span class="ii">✉️</span>
+                <input type="email" id="loginEmail" placeholder="you@university.edu" autocomplete="email"/>
+              </div>
+            </div>
+            <div class="field">
+              <label for="loginName">Your name (optional)</label>
+              <div class="iw"><span class="ii">👤</span>
+                <input type="text" id="loginName" placeholder="How should we address you?" autocomplete="name" maxlength="80"/>
+              </div>
+            </div>
+            <div class="field hidden" id="otpField">
+              <label for="otpCode">Six-digit email code</label>
+              <div class="iw"><span class="ii">🔢</span>
+                <input type="text" id="otpCode" placeholder="000000" inputmode="numeric" autocomplete="one-time-code" maxlength="6" pattern="[0-9]{6}"/>
+              </div>
+            </div>
+            <button type="submit" class="btn-main" id="otpSubmitBtn">Send verification code →</button>
+          </form>
+          <div class="card-foot"><span id="otpHelp">New or returning? Verify your email to continue.</span><button type="button" class="text-button hidden" id="changeEmailBtn">Use a different email</button><button type="button" class="text-button hidden" id="resendOtpBtn">Resend code</button></div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="alert">
+    <span id="toastMsg"></span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
